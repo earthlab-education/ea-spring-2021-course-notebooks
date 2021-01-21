@@ -17,7 +17,7 @@ dependencies:
   - geopy
   - cartopy
   - contextily
-  - earthpy>=0.9.2
+  - earthpy
   - folium
   - geojson
   - mapboxgl
@@ -36,7 +36,6 @@ dependencies:
 
   # Jupyter Environment
   - papermill
-  - autopep8
   - notebook
   - ipython
   # Autograding

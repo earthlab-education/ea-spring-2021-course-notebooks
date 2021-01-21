@@ -11,7 +11,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: ["ubuntu-latest", "windows-latest", "mac-latest"]
+        os: ["ubuntu-latest"]
         python-version: [3.8]
 
     steps:
@@ -28,7 +28,7 @@ jobs:
       run: |
         python --version
         conda env create -f environment.yml
-        
+
     - name: View Env
       shell: bash
       run: |
