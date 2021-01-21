@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - '*'
-  pull_request:
-    branches:
-      - '*'
 jobs:
   setup-build:
     name: Ex1 (${{ matrix.python-version }}, ${{ matrix.os }})
@@ -36,5 +33,5 @@ jobs:
       run: |
         source activate ea-python
         # Loop through all notebooks and run them using papermill
-        for i in in-class-demos/*.ipynb; do papermill $i testing.ipynb; 
+        for i in in-class-demos/*.ipynb; do papermill $i testing.ipynb;
         done
