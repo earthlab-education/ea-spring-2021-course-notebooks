@@ -28,6 +28,11 @@ jobs:
       run: |
         python --version
         conda env create -f environment.yml
+        
+    - name: View Env
+      shell: bash
+      run: |
+        source activate ea-python
         conda list
 
     - name: Run all notebooks
