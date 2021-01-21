@@ -28,6 +28,7 @@ jobs:
       run: |
         python --version
         conda env create -f environment.yml
+        conda list
 
     - name: Run all notebooks
       run: |
