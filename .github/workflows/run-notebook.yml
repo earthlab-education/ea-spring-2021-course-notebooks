@@ -36,8 +36,9 @@ jobs:
         conda list
 
     - name: Run all notebooks
+      shell: bash
       run: |
         source activate ea-python
         # Loop through all notebooks and run them using papermill
-        for (i in in-class-demos/*.ipynb); do papermill $i testing.ipynb;
+        for i in in-class-demos/*.ipynb; do papermill $i testing.ipynb;
         done
